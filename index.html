@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tài Xỉu Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Tài Xỉu Game</h1>
+        <div id="balance">Tiền: 1000</div>
+        
+        <div id="bet-buttons">
+            <button id="bet-big">Cược Tài (11-18)</button>
+            <button id="bet-small">Cược Xỉu (3-10)</button>
+        </div>
+        
+        <div id="bet-input">
+            <input type="number" id="bet-amount" placeholder="Nhập số tiền cược" min="1" />
+            <button id="place-bet">Đặt Cược</button>
+        </div>
+        
+        <div id="dice-container">
+            <div class="dice" id="dice1"></div>
+            <div class="dice" id="dice2"></div>
+            <div class="dice" id="dice3"></div>
+        </div>
+        
+        <button id="roll-dice">Quay Xúc Xắc</button>
+        <div id="dice-result"></div>
+        <div id="message"></div>
+
+        <div id="previous-results">
+            <h3>Kết quả trước:</h3>
+            <ul id="result-history"></ul>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+#game-container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #4CAF50;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#bet-input {
+    margin-top: 20px;
+}
+
+input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    width: 150px;
+}
+
+#dice-container {
+    margin-top: 20px;
+}
+
+.dice {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    background-color: #ffeb3b;
+    border-radius: 10px;
+    font-size: 30px;
+    line-height: 50px;
+    color: #000;
+    transition: transform 1s ease;
+}
+
+/* Animation for dice */
+@keyframes dice-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(720deg);
+    }
+}
+
+.dice-spin {
+    animation: dice-spin 1s linear;
+}
+
+/* History of previous results */
+#previous-results {
+    margin-top: 20px;
+}
+
+#previous-results ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#previous-results li {
+    background-color: #f1f1f1;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
